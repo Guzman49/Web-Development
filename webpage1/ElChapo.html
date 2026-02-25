@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Chapo Profile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f0f0f;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: #111;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #222;
+        }
+
+        header h1 {
+            color: #d4af37;
+        }
+
+        nav a {
+            color: #f5f5f5;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .hero {
+            height: 85vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+                        url('https://images.unsplash.com/photo-1520975922324-8c5a6aef2c44?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #ccc;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+        .section-title {
+            color: #d4af37;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #171717;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #222;
+            margin-bottom: 20px;
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+        }
+
+        .fact-box {
+            background: #171717;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #222;
+        }
+
+        .timeline {
+            border-left: 3px solid #d4af37;
+            padding-left: 20px;
+        }
+
+        .timeline-item {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -29px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: #d4af37;
+            border-radius: 50%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111;
+            color: #888;
+            border-top: 1px solid #222;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>El Chapo</h1>
+    <nav>
+        <a href="#bio">Biography</a>
+        <a href="#rise">Rise</a>
+        <a href="#timeline">Arrests</a>
+        <a href="#legacy">Legacy</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>Joaquín “El Chapo” Guzmán</h2>
+        <p>The rise and fall of one of the world's most notorious cartel leaders.</p>
+    </div>
+</section>
+
+<section id="bio">
+    <h3 class="section-title">Biography</h3>
+
+    <div class="card">
+        <p>
+            Joaquín "El Chapo" Guzmán was born on April 4, 1957, in Badiraguato,
+            Sinaloa, Mexico. Raised in a rural farming family, he later became
+            one of the most powerful figures in international drug trafficking.
+        </p>
+    </div>
+
+    <div class="facts">
+        <div class="fact-box"><strong>Born</strong><br>1957</div>
+        <div class="fact-box"><strong>Nationality</strong><br>Mexican</div>
+        <div class="fact-box"><strong>Known For</strong><br>Sinaloa Cartel</div>
+        <div class="fact-box"><strong>Status</strong><br>Life Sentence</div>
+    </div>
+</section>
+
+<section id="rise">
+    <h3 class="section-title">Rise to Power</h3>
+
+    <div class="card">
+        <p>
+            Guzmán expanded his influence through the Sinaloa Cartel, building
+            extensive international trafficking routes and becoming one of the
+            most wanted individuals by global law enforcement agencies.
+        </p>
+    </div>
+</section>
+
+<section id="timeline">
+    <h3 class="section-title">Arrests & Escapes</h3>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <h4>1993 — First Arrest</h4>
+            <p>Captured in Guatemala and extradited to Mexico.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>2001 — Prison Escape</h4>
+            <p>Escaped from a maximum-security prison in Mexico.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>2014 — Recaptured</h4>
+            <p>Mexican authorities captured Guzmán again.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>2015 — Tunnel Escape</h4>
+            <p>Escaped through a sophisticated underground tunnel.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h4>2019 — Life Sentence</h4>
+            <p>Sentenced to life imprisonment in the United States.</p>
+        </div>
+    </div>
+</section>
+
+<section id="legacy">
+    <h3 class="section-title">Impact & Legacy</h3>
+
+    <div class="card">
+        <p>
+            Guzmán's activities had a significant impact on global drug
+            trafficking and organized crime enforcement efforts. His story
+            remains one of the most studied cases in modern criminal history.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>Educational documentary profile website.</p>
+</footer>
+
+</body>
+</html>
